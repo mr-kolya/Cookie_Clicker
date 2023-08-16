@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+
+    <ImageView
+        android:id="@+id/imgCookie"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_centerInParent="true"
+        android:onClick="onClick"
+        android:src="@drawable/cookie"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/totalSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/clickPrice"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="7dp"
+        android:gravity="center"
+        android:text="cookies\n 0"
+        android:textSize="@dimen/Score_size" />
+
+    <TextView
+        android:id="@+id/clickPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imgCookie"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="cookies per click\n 1"
+        android:textSize="@dimen/Score_size" />
+
+    <Button
+        android:id="@+id/shop"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgCookie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/Button_color"
+        android:onClick="onClick"
+        android:text="@string/shop"
+        android:textColor="@color/black"
+        android:textSize="@dimen/Text_size"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/game_exit"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/Button_color"
+        android:onClick="onClick"
+        android:text="@string/exit"
+        android:textColor="@color/black"
+        android:textSize="@dimen/Text_size"
+        tools:ignore="UsingOnClickInXml" />
+</RelativeLayout>

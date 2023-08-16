@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/shop_total_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/shop_click_price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        android:text="cookies\n 0"
+        android:textSize="@dimen/Score_size" />
+
+    <TextView
+        android:id="@+id/shop_click_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buy"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="cookies per click\n 1"
+        android:textSize="@dimen/Score_size" />
+
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/Button_color"
+        android:onClick="onClick"
+        android:text="improve for 10 cookie"
+        android:textColor="@dimen/Text_color"
+        android:textSize="@dimen/Text_size"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/shop_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buy"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/Button_color"
+        android:onClick="onClick"
+        android:text="@string/exit"
+        android:textColor="@dimen/Text_color"
+        android:textSize="@dimen/Text_size"
+        tools:ignore="UsingOnClickInXml" />
+</RelativeLayout>
+

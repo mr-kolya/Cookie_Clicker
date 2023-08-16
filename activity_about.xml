@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/titel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="Сделано \n Николаем Здержиковым \n студентом 1 курса \n ФКН ПМИ"
+        android:textSize="40sp"
+        android:textColor="#696969"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/about_exit"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/titel"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/Button_color"
+        android:onClick="onClick"
+        android:text="@string/exit"
+        android:textColor="@color/black"
+        android:textSize="@dimen/Text_size"
+        tools:ignore="UsingOnClickInXml" />
+
+    <ImageView
+        android:id="@+id/imgCookie"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_below="@+id/about_exit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp"
+        android:src="@drawable/cookie" />
+</RelativeLayout>
